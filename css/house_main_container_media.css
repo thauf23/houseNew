@@ -74,8 +74,7 @@
         margin-bottom: 20px;
     }
     #container .container_review fieldset .container_text::after{
-        height: 2500px;
-        
+        height: 2500px;   
     }
     #container fieldset.container_right .container_text > a:hover h2,
     #container fieldset.container_left .container_text > a:hover h2{
