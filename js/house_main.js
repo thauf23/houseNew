@@ -11,7 +11,7 @@ $(window).on('scroll',function(){
         var imgOnc = imgOn.replace('_on','_off');
         $('.header_nav h1 img').attr('src',imgOnc);
         $('header .header_nav').css({
-            background: 'rgba(255, 255, 255, .3)'
+            background: 'rgba(255, 255, 255, .5)'
         });
         $('.header_nav nav strong').css({
             color: '#000'
