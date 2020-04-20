@@ -170,7 +170,7 @@
     "review_3 review_3 review_2 review_2"
     "review_4 review_4 review_5 review_5"
     "review_4 review_4 review_6 review_6";
-    grid-gap: 12px;
+    grid-gap: 20px;
 }
 #container .container_review fieldset .container_grid .review_grid li:nth-of-type(1){
     grid-area: review_1;
