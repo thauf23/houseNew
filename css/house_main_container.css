@@ -1,0 +1,334 @@
+@import url('house_main_container_common.css');
+@import url('house_main_ie.css');
+/* video */
+#container .container_video{
+    width: 100%; height: 100vh;
+    overflow: hidden;
+}
+#container .container_video video{
+    width: 100%; height: auto;
+}
+
+/* built-in */
+#container .container_builtin{
+    padding-top: 15.625em;
+    position: relative;
+    overflow: hidden;
+}
+#container .container_builtin::before{
+    content: '';
+    display: block;
+    width: 1px; height: 18.438rem;
+    background: #afafaf;
+    position: absolute;
+    left: 53px; top: 0; 
+}
+#container .container_builtin fieldset .container_text{
+    height: 31.125rem;
+}
+#container .container_builtin fieldset .container_text::after{
+    content: '';
+    display: block;
+    width: 1px; height: 35rem;
+    background: #afafaf;
+    position: absolute;
+    right: -5rem; top: -3.85rem;
+}
+
+/* container_builtin img */
+#container .container_builtin fieldset ul{
+    width: 78%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#container .container_builtin fieldset ul li{
+    width: 27%;
+}
+#container .container_builtin fieldset ul li a figure p{
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#container .container_builtin fieldset ul li a figure p img{
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+/* img line */
+#container .container_builtin fieldset ul li a figure p span{
+    position: absolute;
+    transition: .7s;
+}
+#container .container_builtin fieldset ul li a figure p span:nth-of-type(1){
+    width: 100%; height: 30px;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(76,37,12,1) 60%, rgba(128,62,19,1) 90%);
+    right: -100%; top: 0;
+}
+#container .container_builtin fieldset ul li a figure p span:nth-of-type(2){
+    width: 100%; height: 30px;
+    background: linear-gradient(90deg, rgba(128,62,19,1) 10%, rgba(76,37,12,1) 40%, rgba(0,0,0,0) 100%);
+    left: -100%; bottom: 0;
+}
+#container .container_builtin fieldset ul li a figure p span:nth-of-type(3){
+    width: 30px; height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(76,37,12,1) 60%, rgba(128,62,19,1) 90%);
+    left: 0; bottom: -100%;
+}
+#container .container_builtin fieldset ul li a figure p span:nth-of-type(4){
+    width: 30px; height: 100%;
+    background: linear-gradient(180deg, rgba(128,62,19,1) 10%, rgba(76,37,12,1) 40%, rgba(0,0,0,0) 100%);
+    right: 0; top: -100%;
+}
+
+/* img line hover*/
+#container .container_builtin fieldset ul li:hover a figure p span:nth-of-type(1){
+    right: 0;
+}
+#container .container_builtin fieldset ul li:hover a figure p span:nth-of-type(2){
+    left: 0;
+}
+#container .container_builtin fieldset ul li:hover a figure p span:nth-of-type(3){
+    bottom: 0;
+}
+#container .container_builtin fieldset ul li:hover a figure p span:nth-of-type(4){
+    top: 0;
+}
+#container .container_builtin fieldset ul li a figure figcaption{
+    text-align: center;
+    font-size: 1.875rem;
+    letter-spacing: .2em;
+    margin-top: 2.27em;
+    position: relative;
+}
+#container .container_builtin fieldset ul li a figure figcaption::after{
+    content: '';
+    display: inline-block;
+    width: 45%; height: 10px;
+    background: rgba(149, 72, 21, .5);
+    position: absolute;
+    left: 50%; bottom: 0;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+/* gallery */
+#container .container_gallery{
+    padding-top: 11.875em;
+}
+#container .container_gallery fieldset .img_background{
+    width: 100%; height: 27.25rem;
+    background: url(../img/main/review_img.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+#container .container_gallery fieldset .container_text{
+    height: 17.3125rem;
+}
+#container .container_gallery fieldset .container_text::before{
+    content: '';
+    display: block;
+    width: 1px; height: 60.325rem;
+    background: #afafaf;
+    position: absolute;
+    left: -5rem; top: -3.85rem;
+    z-index: 0;
+}
+
+/* review */
+#container .container_review{
+    padding-top: 11.875em;
+    overflow: hidden;
+}
+#container .container_review fieldset .container_text::after{
+    content: '';
+    display: block;
+    width: 1px; height: 93.75rem;
+    background: #afafaf;
+    position: absolute;
+    right: -5rem; top: -3.85rem;
+    z-index: -1;
+}
+#container .container_review fieldset .container_text{
+    height: 17.3125rem;
+}
+
+/* review grid */
+#container .container_review fieldset .container_grid{
+    width: 78%;
+    margin: 0 auto 11.875rem;
+    background: #fff;
+}
+#container .container_review fieldset .container_grid .review_grid{
+    display: grid;
+    grid-template-rows: repeat(3, 25%);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "review_1 review_1 review_2 review_2"
+    "review_3 review_3 review_2 review_2"
+    "review_4 review_4 review_5 review_5"
+    "review_4 review_4 review_6 review_6";
+    grid-gap: 3px;
+}
+#container .container_review fieldset .container_grid .review_grid li:nth-of-type(1){
+    grid-area: review_1;
+}
+#container .container_review fieldset .container_grid .review_grid li:nth-of-type(2){
+    grid-area: review_2;
+}
+#container .container_review fieldset .container_grid .review_grid li:nth-of-type(3){
+    grid-area: review_3;
+}
+#container .container_review fieldset .container_grid .review_grid li:nth-of-type(4){
+    grid-area: review_4;
+}
+#container .container_review fieldset .container_grid .review_grid li:nth-of-type(5){
+    grid-area: review_5;
+}
+#container .container_review fieldset .container_grid .review_grid li:nth-of-type(6){
+    grid-area: review_6;
+}
+#container .container_review fieldset .container_grid .review_grid .grid_item_small a{
+    -ms-display: flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+#container .container_review fieldset .container_grid .review_grid .grid_item_big a{
+    position: relative;
+}
+#container .container_review fieldset .container_grid .review_grid a div img{
+    width: 100%; height: auto;
+    display: block;
+}
+#container .container_review fieldset .container_grid .review_grid li a p{
+    width: 52%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fafafa;
+    text-align: center;
+    padding: 15px;
+}
+#container .container_review fieldset .container_grid .review_grid li:hover a p{
+    background: #ffc400;
+}
+#container .container_review fieldset .container_grid .review_grid .grid_item_big a p{
+    height: 48%;
+    position: absolute;
+    left: 0; bottom: 0;
+}
+
+#container .container_review fieldset .container_grid .review_grid li a p span{
+    display: block;
+    font-weight: 600;
+    font-size: 1rem;
+}
+#container .container_review fieldset .container_grid .review_grid li a p small{
+    display: block;
+    padding-top: 5px;
+    font-size: 0.75rem;
+    color: #6e6e6e;
+}
+
+/* map */
+#container .container_map{
+    overflow: hidden;
+}
+#container .container_map fieldset .container_text{
+    height: 17.3125rem;
+}
+#container .container_map fieldset .container_text::before{
+    content: '';
+    display: block;
+    width: 1px; height: 150vh;
+    background: #afafaf;
+    position: absolute;
+    left: -5rem; top: -3.85rem;
+    z-index: 0;
+}
+#container .container_map fieldset .container_text > a{
+    width: 55%;
+}
+.root_daum_roughmap .wrap_controllers{
+    display: none;
+}
+#container .container_map #mapContant{
+    width: 100%; height: 55vh;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15.625em;
+}
+#container .container_map #mapContant .map_size{
+    width: 100%;
+}
+#container .container_map #mapContant .map_text{
+    width: 32%; height: 100%;
+    background: rgba(255, 255, 255, .8);
+    position: absolute;
+    right: 0; top: 0;
+    z-index: 3;
+}
+#container .container_map #mapContant .map_text p{
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 11.875em 0 11.875em 3.75em;
+}
+#container .container_map #mapContant .map_text p span{
+    padding-top: .5em;
+    color: #5b5b5b;
+}
+#container .container_map #mapContant .map_text p span small{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 1.07rem;
+}
+#container .container_map #mapContant .map_text p strong{
+    font-size: 0.875rem;
+    padding-top: 2em;
+    color: #5b5b5b;
+}
+#container .container_map .logo_img{
+    padding-left: 29%;
+}
+/* #container .container_map #mapContant iframe{
+    width: 100%;
+} */
+/* footer */
+footer{
+    width: 100%; 
+    background: #000;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3.75em 0 1em 0;
+}
+footer ul li{
+    color: #6e6e6e;
+    font-size: 0.75rem;
+}
+footer ul li::after{
+    content: '';
+    display: inline-block;
+    background: #6e6e6e;
+    width: 1px; height: 8px;
+    margin: 0 10px;
+}
+footer ul li:last-of-type:after{
+    display: none;
+}
+footer p{
+    text-align: center;
+    color: #6e6e6e;
+    font-size: 0.75rem;
+    padding-bottom: 6.25em;
+}
+

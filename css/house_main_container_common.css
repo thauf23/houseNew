@@ -1,0 +1,67 @@
+/* font-family: 'Poor Story', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+/* *common* */
+legend{
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.875rem;
+    box-sizing: border-box;
+    padding: 0.733em 1.67em;
+    border: 1px solid #afafaf;
+}
+h2{
+    font-size: 1.25rem;
+    transition: 1s;
+}
+#container fieldset .container_text{
+    width: 40%;
+    margin: 1em 32% 0 32%;
+    position: relative;
+}
+#container fieldset .container_text span{
+    width: 95%;
+    text-align: justify;
+    line-height: 2em;
+    font-size: 0.875rem;
+}
+#container fieldset .container_text > a{
+    width: 43%;
+    margin-top: 5.214em;
+    position: relative;
+    right: 0;
+}
+
+/* common right */
+#container fieldset.container_right{
+    border: none;
+    border-top: 1px solid #afafaf;
+}
+#container fieldset.container_right legend{
+    margin-left: 18%;
+}
+#container fieldset.container_right .container_text > a{
+    float: right;
+}
+#container fieldset.container_right .container_text > a:hover h2{
+    padding-left: 15%;
+}
+#container fieldset.container_right .container_text > a img{
+    padding-left: 25%;
+}
+
+/* common left */
+#container fieldset.container_left{
+    border: none;
+    border-top: 1px solid #afafaf;
+}
+#container fieldset.container_left legend{
+    margin-left: 66%;
+}
+#container fieldset.container_left .container_text span{
+    float: right;
+}
+#container fieldset.container_left .container_text > a h2{
+    padding-left: 30%;
+}
+#container fieldset.container_left .container_text > a:hover h2{
+    padding-left: 15%;
+}

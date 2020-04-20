@@ -1,0 +1,229 @@
+@media (max-width:1475px){
+    #container .container_video{
+        height:auto;
+    }
+    #container .container_builtin{
+        padding-top: 7.5em;
+        position: relative;
+    }
+    #container .container_builtin::before{
+        display: none;
+    }
+    #container .container_gallery fieldset .container_text > a, #container .container_map fieldset .container_text > a{
+        width: 80%;
+    }
+    #container fieldset.container_right .container_text > a img{
+        padding-left: 0;
+    }
+/* map */
+    #container .container_map #mapContant .map_text p{
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+    #container .container_map #mapContant .map_text p small{
+        display: block;
+    }
+    footer ul{
+        width: 80%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:1024px){
+    #container .container_builtin fieldset .container_text > a,
+    #container .container_review fieldset .container_text > a{
+        width: 65%;
+    }
+    #container .container_builtin fieldset.container_right .container_text > a img,
+    #container .container_review fieldset.container_right .container_text > a img{
+        padding-left: 20%;
+    }
+    #container .container_review fieldset .container_grid .review_grid li a p span{
+        font-size: 0.875rem;
+    }
+}
+@media (max-width:768px){
+    h2{
+        font-size: 1.125rem;
+    }
+    #container .container_builtin fieldset ul li a figure figcaption{
+        font-size: 1.25rem;
+        margin-top: 1.625em;
+    }
+    #container .container_builtin fieldset ul li a figure p span{
+        display: none;
+    }
+    #container .container_builtin fieldset ul li a figure figcaption::after{
+        width: 60%;
+    }
+    #container fieldset.container_left legend{
+        margin-left: 52%;
+    }
+    #container .container_gallery fieldset .container_text > a,
+    #container .container_map fieldset .container_text > a{
+        width: 100%;
+    }
+    #container .container_review fieldset .container_grid{
+        width: 68%;
+    }
+    #container .container_review fieldset .container_grid .review_grid{
+        display: block;
+    }
+    #container .container_review fieldset .container_grid .review_grid li{
+        margin-bottom: 20px;
+    }
+    #container .container_review fieldset .container_text::after{
+        height: 2500px;
+        
+    }
+    #container fieldset.container_right .container_text > a:hover h2,
+    #container fieldset.container_left .container_text > a:hover h2{
+        padding-left: 0;
+    }
+    #container .container_map #mapContant .map_text p span small{
+        font-size: 0.875rem;
+        padding-top: 3px;
+    }
+}
+@media (max-width:480px){
+    header .header_nav::after, header .header_nav::before{
+        display: none;
+    }
+    header{
+        height: 90px;
+    }
+    header ul{
+        height: auto;
+        padding-top: 5vh;
+    }
+    header ul li{
+        padding: 0 0 15px 80px;
+    }
+    header ul li:nth-of-type(6){
+        padding-bottom: 5vh;
+    }
+    #container .container_video video{
+        margin-bottom: -4px;
+    }
+    /* container commom */
+    legend{
+        font-size: 1.5rem;
+    }
+    #container fieldset.container_right legend{
+        margin-left: 7%;
+    }
+    #container fieldset.container_left legend{
+        margin-left: 46%;
+    }
+    #container fieldset .container_text{
+        width: 76%;
+        margin: 2em auto;
+    }
+    #container .container_video video{
+        margin-bottom: -4px;
+    }
+    #container fieldset .container_text::after{
+        height: 1000rem !important;
+        right: -1rem !important;
+        top: -4.25rem !important; 
+    }
+    #container fieldset .container_text::before {
+        height: 200rem !important;
+        left: -1.15rem !important;
+        top: -4.25rem !important;
+    }
+    #container .container_builtin fieldset.container_right .container_text > a img,
+    #container .container_review fieldset.container_right .container_text > a img{
+        padding-left: 0;
+    }
+    /* builtin */
+    #container .container_builtin{
+        padding-top: 3.75em;
+    }
+    #container .container_builtin::before{
+        display: block;
+        height: 4rem;
+        top: -4px;
+    }
+    #container .container_builtin fieldset ul{
+        width: 60%;
+        display: block;
+    }
+    #container .container_builtin fieldset ul li{
+        width: 100%;
+        margin-bottom: 6.25em;
+    }
+    #container .container_gallery {
+        padding-top: 0;
+        overflow: hidden;
+    }
+    #container .container_gallery fieldset .img_background {
+        margin-bottom: 11.875em;
+    }
+    #container .container_review {
+        padding-top: 0;
+    }
+    #container .container_map fieldset.container_left legend{
+        margin-left: 50%;
+    }
+    #container .container_map #mapContant .map_text{
+        width: 45%;
+    }
+}
+@media (max-width:375px){
+    #container .container_builtin::before,
+    #container fieldset .container_text::after,
+    #container fieldset .container_text::before{
+        display: none !important;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    legend{
+        margin: 0 auto !important;
+    }
+    #container fieldset.container_right .container_text > a{
+        width: 88%;
+    }
+    #container fieldset.container_right .container_text > a img{
+        float: right;
+    }
+    #container .container_review fieldset .container_grid{
+        width: 80%;
+    }
+    #container .container_review fieldset .container_grid .review_grid .grid_item_small a {
+        flex-wrap: wrap;
+    }
+    #container .container_review fieldset .container_grid .review_grid li a p {
+        width: 100%;
+        order: 2;
+    }
+    #container .container_review fieldset .container_grid .review_grid .grid_item_big a p {
+        position: static;
+    }
+    #container .container_map fieldset .container_text {
+        height: 12.5rem;
+    }
+    #container .container_map #mapContant {
+        margin-bottom: 3.125em;
+    }
+    #container .container_map #mapContant .map_size {
+        display: none;
+    }
+    #container .container_map #mapContant .map_text {
+        width: 100%;
+    }
+    #container .container_map .logo_img{
+        display: none;
+    }
+}
+@media (max-width:320px){
+    #container fieldset .container_text > a {
+        /* width: 80%; */
+        margin-top: 3.125em;
+    }
+    #container .container_map fieldset.container_left .container_text > a h2 {
+        padding-left: 17%;
+    }
+}

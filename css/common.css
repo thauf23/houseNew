@@ -1,0 +1,35 @@
+html,body{
+    margin:0px;
+    font-size: 16px;
+}
+ul,li{
+    list-style-type: none;
+    box-sizing: border-box;
+}
+a{
+    color:#333;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean');
+span,em,strong,a{display: inline-block;}
+*{
+    margin:0;padding:0;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size:16px;
+    color:#333;
+    box-sizing:border-box;
+    text-transform: capitalize;
+    /*
+        border 또는 padding 넣어주면 
+        width,height값이 변경됨
+    
+        box-sizing:border-box는 이러한 문제점을
+        해결해줌 (width,height 값이 변경 안됨)
+    */
+    
+}
+
+/* font-family: 'Kanit', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean,latin-ext,thai,vietnamese');
