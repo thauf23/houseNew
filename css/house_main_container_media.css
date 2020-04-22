@@ -154,6 +154,7 @@
         width: 45%;
     }
 }
+@media (max-width:480px)
 @media (max-width:375px){
     #container .container_builtin::before,
     #container fieldset .container_text::after,

@@ -2,10 +2,9 @@ $(function(){
 // start
 
 // header
-var builtinTop = $('.container_builtin').offset().top;
+var builtinTop = $('.offset_top').offset().top;
 var imgOn = $('.header_nav h1 img').attr('src');
 
-console.log(builtinTop);
 $(window).on('scroll',function(){
     if(builtinTop <= $(window).scrollTop()){
         var imgOnc = imgOn.replace('_on','_off');

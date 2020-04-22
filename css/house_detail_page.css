@@ -1,0 +1,92 @@
+@import url('house_header.css');
+
+#container{}
+
+#container .sub_visual{
+    width: 100%;
+}
+#container .sub_visual figure{
+    position: relative;
+}
+#container .sub_visual figure > p{}
+#container .sub_visual figure > p img{}
+#container .sub_visual figure figcaption{
+    width: 38%;
+    position: absolute;
+    left: 20%; top: 50%;
+    transform: translateY(-50%);
+    /* border: 1px solid #f00; */
+}
+#container .sub_visual figure figcaption > p{
+    font-family: 'Kanit', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 0.5em;
+}
+#container .sub_visual figure figcaption span{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.7;
+    font-weight: 400;
+}
+#container .contant_guide{
+    width: 78%;
+    margin: 0 auto;
+}
+/* container nav */
+#container .container_nav{
+    padding: 2.125em;
+    overflow: hidden;
+    border-bottom: 1px solid #e0e0e0;
+}
+#container .container_nav h2{
+    float: left;
+}
+#container .container_nav ul{
+    float: right;
+}
+#container .container_nav ul li{
+    display: inline-block;
+    margin-left: 4.375em;
+}
+
+section{
+    margin-top: 12.5em;
+}
+
+/* refrigerator design */
+#container .refrigerator_design{
+    margin-top: 5.625em;
+    text-align: center;
+    line-height: 2;
+}
+#container .refrigerator_design h3{
+    font-size: 2.625rem;
+}
+#container .refrigerator_design .design_text{
+    width: 70%;
+    margin: 5em auto 0;
+}
+#container .refrigerator_design .design_text p{}
+
+#container .refrigerator_design .design_color{
+    margin: 6em 0;
+}
+#container .refrigerator_design .design_color a:nth-of-type(1){
+    margin-right: 6em;
+}
+#container .refrigerator_design .design_color a figure{}
+#container .refrigerator_design .design_color a figure p{
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+}
+#container .refrigerator_design .design_color a figure p img{}
+#container .refrigerator_design .design_color a figure figcaption{
+    float: left;
+} 
+#container .refrigerator_design .design_color a figure figcaption small{
+    display: block;
+} 
+#container .refrigerator_design .design_color a figure figcaption strong{} 
