@@ -69,6 +69,7 @@ section{
 }
 #container .refrigerator_design .design_text p{}
 
+/* design_color */
 #container .refrigerator_design .design_color{
     margin: 6em 0;
 }
@@ -81,6 +82,12 @@ section{
     border-radius: 50%;
     overflow: hidden;
     float: left;
+    margin-right: 2em;
+}
+#container .refrigerator_design .design_color a:hover figure p,
+#container .refrigerator_design .design_color a.on figure p{
+    border: 3px solid #ffff00;
+    box-shadow: 5px 5px 20px 5px #ccc;
 }
 #container .refrigerator_design .design_color a figure p img{}
 #container .refrigerator_design .design_color a figure figcaption{
@@ -89,4 +96,80 @@ section{
 #container .refrigerator_design .design_color a figure figcaption small{
     display: block;
 } 
-#container .refrigerator_design .design_color a figure figcaption strong{} 
+#container .refrigerator_design .design_color a figure figcaption strong{}
+
+/* design_img */
+#container .refrigerator_design .design_img{
+    width: 100%;
+    position: relative;
+}
+#container .refrigerator_design .design_img .refrigerator_disign{
+    width: 33%; height: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: none;
+    overflow: hidden;
+}
+#container .refrigerator_design .design_img ul.on_block{
+    display: block;
+}
+#container .refrigerator_design .design_img .refrigerator_disign li{
+    width: 100%;
+    position: absolute;
+    left: 0; top: 0;
+}
+#container .refrigerator_design .design_img .refrigerator_disign li:nth-of-type(1){}
+/* #container .refrigerator_design .design_img .refrigerator_disign > li:nth-of-type(2){
+    left: 100%;
+}
+#container .refrigerator_design .design_img .refrigerator_disign > li:nth-of-type(3){
+    left: 200%;
+}
+#container .refrigerator_design .design_img .refrigerator_disign > li:nth-of-type(4){
+    left: 300%;
+} */
+#container .refrigerator_design .design_img .refrigerator_disign li p{}
+#container .refrigerator_design .design_img .refrigerator_disign li img{
+    /* height: 100%; */
+}
+#container .refrigerator_design .design_img .refrigerator_disign li .refrigerator_text{}
+#container .refrigerator_design .design_img .refrigerator_disign li .refrigerator_text > li{}
+#container .refrigerator_design .design_img .refrigerator_disign li .refrigerator_text > li figure{}
+#container .refrigerator_design .design_img .refrigerator_disign li .refrigerator_text > li figure p{
+    width: 11%;
+}
+#container .refrigerator_design .design_img .refrigerator_disign li .refrigerator_text > li figure p img{}
+#container .refrigerator_design .design_img .refrigerator_disign li .refrigerator_text > li figure figcaption{}
+
+/* design_move */
+#container .refrigerator_design .design_move{
+    width: 60%; height: 100%;
+    position: absolute;
+    left: 50%; top: 0;
+    transform: translateX(-50%);
+}
+#container .refrigerator_design .design_move > p{
+    width: 22px;
+    position: absolute;
+}
+#container .refrigerator_design .design_move > p:nth-of-type(1){
+    left: 0; top: 45%;
+}
+#container .refrigerator_design .design_move > p:nth-of-type(2){
+    right: 0; top: 45%;
+}
+#container .refrigerator_design .design_move > p img{}
+
+/* design_popup */
+#container .refrigerator_design .design_popup{
+    width: 32px;
+    margin: 0 auto;
+}
+#container .refrigerator_design .design_popup img{}
+
+/* design_select */
+#container .refrigerator_design .design_select{}
+#container .refrigerator_design .design_select span{
+    width: 14px; height: 14px;
+    border: 1px solid #333;
+}
