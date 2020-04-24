@@ -100,11 +100,11 @@ section{
 
 /* design_img */
 #container .refrigerator_design .design_img{
-    width: 100%;
+    width: 100%; height: 100%;
     position: relative;
 }
 #container .refrigerator_design .design_img .refrigerator_disign{
-    width: 33%; height: 100%;
+    width: 33%;
     margin: 0 auto;
     position: relative;
     display: none;
@@ -114,24 +114,12 @@ section{
     display: block;
 }
 #container .refrigerator_design .design_img .refrigerator_disign li{
-    width: 100%;
+    width: 100%; height: 100%;
     position: absolute;
     left: 0; top: 0;
 }
-#container .refrigerator_design .design_img .refrigerator_disign li:nth-of-type(1){}
-/* #container .refrigerator_design .design_img .refrigerator_disign > li:nth-of-type(2){
-    left: 100%;
-}
-#container .refrigerator_design .design_img .refrigerator_disign > li:nth-of-type(3){
-    left: 200%;
-}
-#container .refrigerator_design .design_img .refrigerator_disign > li:nth-of-type(4){
-    left: 300%;
-} */
 #container .refrigerator_design .design_img .refrigerator_disign li p{}
-#container .refrigerator_design .design_img .refrigerator_disign li img{
-    /* height: 100%; */
-}
+#container .refrigerator_design .design_img .refrigerator_disign li img{}
 #container .refrigerator_design .design_img .refrigerator_disign li .refrigerator_text{}
 #container .refrigerator_design .design_img .refrigerator_disign li .refrigerator_text > li{}
 #container .refrigerator_design .design_img .refrigerator_disign li .refrigerator_text > li figure{}
@@ -151,6 +139,7 @@ section{
 #container .refrigerator_design .design_move > p{
     width: 22px;
     position: absolute;
+    cursor: pointer;
 }
 #container .refrigerator_design .design_move > p:nth-of-type(1){
     left: 0; top: 45%;
@@ -163,13 +152,22 @@ section{
 /* design_popup */
 #container .refrigerator_design .design_popup{
     width: 32px;
-    margin: 0 auto;
+    margin: 2em auto 1em;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
 }
 #container .refrigerator_design .design_popup img{}
 
 /* design_select */
 #container .refrigerator_design .design_select{}
-#container .refrigerator_design .design_select span{
+#container .refrigerator_design .design_select button{
     width: 14px; height: 14px;
-    border: 1px solid #333;
+    border: 2px solid #333;
+    background: #fff;
+    margin: 0 3px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
 }
