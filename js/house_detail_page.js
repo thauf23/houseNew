@@ -40,7 +40,8 @@ carouselInit()
             }
         }
     }
-
+//     test()
+// function test(){
 // ----------- design_move_prev ---------------------------------
     $('.design_move p:first').on('click',function(){
         // console.log(nowIndex);
@@ -68,11 +69,15 @@ carouselInit()
         nowIndex++;
         carouselLi.eq(nowIndex - 1).css("left", imgWidth);
     });
+// }
 
 // ----------- img_select ---------------------------------
-    $('.design_select button').on('click',function(){
-        $(this).css({background: "#000"});
-    });
+    // $('.design_select button').on('click',function(){
+    //     var butIndex = $(this).index();
+    //     $('.design_img .on_block li').eq(butIndex).css("left", 0);
+    //     $(this).css("background", "#000");
+        
+    // });
 
 // end
 });
