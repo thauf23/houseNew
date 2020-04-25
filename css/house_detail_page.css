@@ -110,6 +110,7 @@
     margin: 0 auto;
     position: relative;
     display: none;
+    z-index: 100;
     overflow: hidden;
 }
 #container .refrigerator_design .design_img ul.on_block{
@@ -133,7 +134,7 @@
 
 /* design_move */
 #container .refrigerator_design .design_move{
-    width: 60%; height: 100%;
+    width: 55%; height: 100%;
     position: absolute;
     left: 50%; top: 0;
     transform: translateX(-50%);

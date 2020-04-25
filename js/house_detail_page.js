@@ -5,11 +5,17 @@ var nowIndex;
 var carouselLi;
 var liCount;
 var imgWidth;
+
+$(document).ready(function(){
+    carouselInit();
+});
+
 $(window).resize(function(){
     carousel_setImgPosition();
 });
 
-carouselInit()
+
+// carouselInit()
 // ----------- design_color ---------------------------------
     $('.design_color a').on('click',function(e){
         e.preventDefault();
@@ -65,7 +71,7 @@ carouselInit()
             nowIndex = -1;
         } else {
             carouselLi.eq(nowIndex + 1).css("left", 0);
-        }
+        }  
         nowIndex++;
         carouselLi.eq(nowIndex - 1).css("left", imgWidth);
     });
@@ -76,7 +82,6 @@ carouselInit()
     //     var butIndex = $(this).index();
     //     $('.design_img .on_block li').eq(butIndex).css("left", 0);
     //     $(this).css("background", "#000");
-        
     // });
 
 // end

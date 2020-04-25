@@ -35,6 +35,7 @@ $(window).on('scroll',function(){
 // header nav
 $('header .header_nav nav').on('click',function(){
     $('header ul').toggleClass('active');
+    $('header').toggleClass('active');
     $('header .header_nav nav p').toggle(900);
     $('.header_menu').toggle(900);
 });
