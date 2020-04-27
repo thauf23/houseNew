@@ -1,5 +1,5 @@
-@import url('house_main_container_common.css');
-@import url('house_main_ie.css');
+/* @import url('house_main_container_common.css');
+@import url('house_main_ie.css'); */
 /* video */
 #container .container_video{
     width: 100%; height: 100vh;
@@ -136,6 +136,9 @@
     left: -5rem; top: -3.85rem;
     z-index: 0;
 }
+#container .container_gallery fieldset .container_text > a img{
+    width: 80%;
+}
 
 /* review */
 #container .container_review{
@@ -158,6 +161,7 @@
 /* review grid */
 #container .container_review fieldset .container_grid{
     width: 78%;
+    max-width: 1500px;
     margin: 0 auto 11.875rem;
     background: #fff;
 }
@@ -253,6 +257,10 @@
 #container .container_map fieldset .container_text > a{
     width: 55%;
 }
+#container .container_map fieldset .container_text > a img{
+    width: 80%;
+}
+
 .root_daum_roughmap .wrap_controllers{
     display: none;
 }
