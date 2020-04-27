@@ -78,11 +78,6 @@ $(window).resize(function(){
 // }
 
 // ----------- img_select ---------------------------------
-    // $('.design_select button').on('click',function(){
-    //     var butIndex = $(this).index();
-    //     $('.design_img .on_block li').eq(butIndex).css("left", 0);
-    //     $(this).css("background", "#000");
-    // });
 
 // end
 });
