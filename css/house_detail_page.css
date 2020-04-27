@@ -34,19 +34,55 @@
 }
 /* container nav */
 #container .container_nav{
-    padding: 2.125em;
-    overflow: hidden;
+    margin-top: 7em;
+    padding: 0 2.125em ;
     border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 #container .container_nav h2{
-    float: left;
+    /* width: 50%; */
+    padding: 1.875em;
 }
 #container .container_nav ul{
-    float: right;
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    right:0; top:0;
 }
 #container .container_nav ul li{
+    width: 25%;
+    text-align: center;
+    padding: 1.875em 0;
+    position: relative;
+}
+#container .container_nav ul li:hover::after{
+    content: '';
     display: inline-block;
-    margin-left: 4.375em;
+    background: rgb(255, 255, 0,.3);
+    width: 46px; height: 46px;
+    position: absolute;
+    right: 16%; top: 15%;
+    border-radius: 50%;
+}
+#container .container_nav ul li.on{
+    border: 1px solid #e0e0e0;
+    border-bottom: none;
+    top: 0px;
+    background: #fff;
+    font-weight: 900;
+}
+#container .container_nav ul li.on::after{
+    content: '';
+    display: inline-block;
+    background: rgb(149, 72, 21,.3);
+    width: 46px; height: 46px;
+    position: absolute;
+    right: 16%; top: 15%;
+    border-radius: 50%;
 }
 
 #container section{
@@ -175,6 +211,34 @@
     cursor: pointer;
 }
 
+/* skill_point common*/
+#container .skill_point > ul > li{
+    margin-top: 12.5em;
+}
+#container .skill_point > ul > li > span{
+    font-size: 1.375rem;
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+    margin-bottom: .7em;
+}
+#container .skill_point > ul > li h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1em 0;
+}
+#container .skill_point > ul > li > small{
+    line-height: 2em;
+}
+#container .skill_point > ul > li > div > span{
+    font-size: 1.375rem;
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+    margin-bottom: .7em;
+}
+#container .skill_point > ul > li > div > small{
+    line-height: 2em;
+}
+
 /* skill_point */
 #container .skill_point{
     text-align: center;
@@ -184,18 +248,14 @@
 #container .skill_point ul .point_01{
     margin-top: 5em;
 }
-#container .skill_point ul .point_01 > span{
-    font-size: 1.375rem;
-    font-weight: bold;
-    border-bottom: 2px solid #333;
-    margin-bottom: .7em;
-}
 #container .skill_point ul .point_01 > p{}
 #container .skill_point ul .point_01 h4{
     font-size: 1.5rem;
     font-weight: 500;
-    margin: 1em 0 4.17em;
+    margin-bottom: 4.17em;
 }
+
+/* point_01 */
 #container .skill_point ul .point_01 > figure{}
 #container .skill_point ul .point_01 figure > p{}
 #container .skill_point ul .point_01 figure > p img{}
@@ -207,32 +267,74 @@
 
 #container .skill_point ul .point_01 > ul{
     width: 100%;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 #container .skill_point ul .point_01 > ul li{
     width: 29%;
-    position: absolute;
-    top: 0;
-}
-#container .skill_point ul .point_01 > ul li:nth-of-type(1){
-    left: 0;
-}
-#container .skill_point ul .point_01 > ul li:nth-of-type(2){
-    left: 50%;
-    transform: translateX(-50%);
-}
-#container .skill_point ul .point_01 > ul li:nth-of-type(3){
-    right: 0;
 }
 #container .skill_point ul .point_01 > ul li > P{}
 #container .skill_point ul .point_01 > ul li > P img{}
 #container .skill_point ul .point_01 > ul li > figure{
-    height: 380px;
+    height: 450px;
     background: #f4f4f4;
+    padding: 2em;
 }
-#container .skill_point ul .point_01 > ul li figure > p{}
-#container .skill_point ul .point_01 > ul li figure > p img{}
-#container .skill_point ul .point_01 > ul li figure figcaption{}
-#container .skill_point ul .point_01 > ul li figure figcaption small{}
-#container .skill_point ul .point_01 > ul li figure figcaption strong{}
-#container .skill_point ul .point_01 > ul li figure figcaption span{}
+#container .skill_point ul .point_01 > ul li figure > p{
+    padding: 2.75em 0;
+}
+#container .skill_point ul .point_01 > ul li figure > p img{
+    width: 80px;
+    margin: 0 auto;
+}
+#container .skill_point ul .point_01 > ul li figure figcaption{
+    margin: 0;
+}
+#container .skill_point ul .point_01 > ul li figure figcaption small{
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+}
+#container .skill_point ul .point_01 > ul li figure figcaption strong{
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.8em 0;
+}
+#container .skill_point ul .point_01 > ul li figure figcaption span{
+    font-size: 0.875rem;
+}
+
+/* point_02 */
+#container .skill_point ul .point_02{}
+#container .skill_point ul .point_02 small{
+    line-height: 2em;
+}
+#container .skill_point ul .point_02 p:nth-of-type(2){
+    width: 30%;
+    margin: 3.125em auto 2.5em;
+}
+#container .skill_point ul .point_02 p:nth-of-type(3){
+    margin-top: 6.25em;
+}
+
+/* point_03 */
+#container .skill_point ul .point_03 p:nth-of-type(2){
+    margin-top: 6.25em;
+}
+
+/* point_04 point_05 */
+#container .skill_point ul .point_common{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#container .skill_point ul .point_common div{
+    width: 36%;
+}
+#container .skill_point ul .point_common > p{
+    width: 60%;
+}
+#container .skill_point ul .point_common.point_order div{
+    order: 2;
+}
+
