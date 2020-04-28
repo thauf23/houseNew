@@ -337,7 +337,9 @@
 }
 
 /* refrigerator_gallery */
-#container .refrigerator_gallery{}
+#container .refrigerator_gallery{
+    position: relative;
+}
 #container .refrigerator_gallery ul{
     width: 100%;
     display: flex;
@@ -382,11 +384,13 @@
 /* refrigerator_gallery pop up*/
 #container .refrigerator_gallery .gallery_pop{
     width: 100%; height: 100vh;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .8);
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: relative; */
+    position: absolute;
+    left: 0; top: 0;
+    display: none;
 }
 #container .refrigerator_gallery .gallery_pop > p{
     width: 80%; height: 80vh;
@@ -415,4 +419,23 @@
 #container .refrigerator_gallery .gallery_arrow p:nth-of-type(2){
     right: 2%;
 }
-
+#container .refrigerator_gallery .gallery_pop .gallery_x{
+    width: 62px; height: 60px;
+    position: absolute;
+    top: 6%; right: 3%;
+}
+#container .refrigerator_gallery .gallery_pop .gallery_x span{
+    width: 100%; height: 2px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    right: 0;
+}
+#container .refrigerator_gallery .gallery_pop .gallery_x span:nth-of-type(1){
+    top: 0;
+    transform: rotate(45deg);
+}
+#container .refrigerator_gallery .gallery_pop .gallery_x span:nth-of-type(2){
+    top: 0;
+    transform: rotate(-45deg);
+}
