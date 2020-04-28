@@ -464,5 +464,48 @@
 }
 #container .refrigerator_size .size_button p{
     width: 20px;
+    margin-top: 3px;
 }
 #container .refrigerator_size .size_button p img{}
+
+/* refrigerator_information */
+#container .refrigerator_information{
+    background: #d1d1d1;
+    padding: 4em 6em;
+}
+#container .refrigerator_information ul{}
+#container .refrigerator_information ul li{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin: 2em 0;
+}
+#container .refrigerator_information ul li strong{
+    margin: 1em 0;
+}
+#container .refrigerator_information ul li small{
+    margin: 0.5em 0;
+    border: 1px solid #f00;
+}
+#container .refrigerator_information ul li span{}
+
+#container .refrigerator_information ul li dl{
+    
+}
+#container .refrigerator_information ul li dl dt{}
+#container .refrigerator_information ul li dl dd{
+    width: 33%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    float: left;
+}
+
+#container .refrigerator_information .button_bottom{
+    background: #d1d1d1;
+    padding-bottom: 0;
+    padding-top: 4em;
+}
+#container .refrigerator_information .button_bottom p{
+    transform: rotate(180deg);
+}
