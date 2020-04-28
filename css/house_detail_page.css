@@ -449,13 +449,20 @@
 #container .refrigerator_size .size_img{
     padding: 5em 0 3em;
 }
-#container .refrigerator_size .size_img  p{
-    
-}
+#container .refrigerator_size .size_img  p{}
 #container .refrigerator_size .size_img p img{}
 
-#container .refrigerator_size .size_button{}
-#container .refrigerator_size .size_button span{}
-#container .refrigerator_size .size_button p{}
-#container .refrigerator_size .size_button p img{}
+#container .refrigerator_size .size_button{
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2em;
+}
+#container .refrigerator_size .size_button span{
+    margin-right: 20px;
+}
+#container .refrigerator_size .size_button p{
+    width: 20px;
+}
 #container .refrigerator_size .size_button p img{}
