@@ -349,50 +349,70 @@
     width: 30%;
     position: relative;
     cursor: url(../img/detail_page/refrigerator_design/search_w.png), zoom-in;
-
 }
-/* #container .refrigerator_gallery ul li:hover{
-    cursor: url(../img/detail_page/refrigerator_design/search_w.png) zoom-in;
-} */
-/* #container .refrigerator_gallery ul li:after{
-    transition: .35s;
-} */
-#container .refrigerator_gallery ul li:hover:after{
-    background: url(../img/detail_page/refrigerator_design/search_w.png) no-repeat center;
-    content: '';
-    display: block;
-    width: 60px; height: 60px;
+
+#container .refrigerator_gallery ul li:after{
+    content: 'Press down';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #fff;
+    background: rgba(0, 0, 0, .3);
+    width: 100%; height: 100%;
     position: absolute;
-    left: 50%; top: 42%;
-    transform: translate(-50%);
-    z-index: 10;
+    left: 0; top: 0;
+    opacity: 0;
+    transition: .5s;
 }
-
-#container .refrigerator_gallery ul li:nth-of-type(1){
-   
+#container .refrigerator_gallery ul li:hover:after{
+    opacity: 1;
 }
-#container .refrigerator_gallery ul li:nth-of-type(2){
-    height: 50%;
-}
+#container .refrigerator_gallery ul li:nth-of-type(2),
 #container .refrigerator_gallery ul li:nth-of-type(3){
-    
+    height: 50%;
 }
 #container .refrigerator_gallery ul li:nth-of-type(4){
     position: absolute;
     left: 50%; bottom: 0%;
     transform: translateX(-50%);
 }
-#container .refrigerator_gallery ul li:nth-of-type(1) img{
-   
-}
-#container .refrigerator_gallery ul li:nth-of-type(3) img{
-    
-}
-#container .refrigerator_gallery ul li:nth-of-type(4) img{
-   
-}
 
 /* refrigerator_gallery pop up*/
-#container .refrigerator_gallery .gallery_pop{}
-#container .refrigerator_gallery .gallery_pop p{}
-#container .refrigerator_gallery .gallery_pop p img{}
+#container .refrigerator_gallery .gallery_pop{
+    width: 100%; height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+#container .refrigerator_gallery .gallery_pop > p{
+    width: 80%; height: 80vh;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+}
+#container .refrigerator_gallery .gallery_pop > p img{
+    width: 90%;
+}
+#container .refrigerator_gallery .gallery_arrow{
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+}
+#container .refrigerator_gallery .gallery_arrow p{
+    position: absolute;
+    top: 50%;
+}
+#container .refrigerator_gallery .gallery_arrow p:nth-of-type(1){
+    left: 2%; 
+}
+#container .refrigerator_gallery .gallery_arrow p:nth-of-type(2){
+    right: 2%;
+}
+
