@@ -6,9 +6,9 @@ var carouselLi;
 var liCount;
 var imgWidth;
 
-$(document).ready(function(){
-    carouselInit();
-});
+
+carouselInit();
+
 
 $(window).resize(function(){
     carousel_setImgPosition();
