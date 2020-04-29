@@ -6,14 +6,16 @@ var carouselLi;
 var liCount;
 var imgWidth;
 
+$(document).ready(function(){
+    carouselInit();
+});
+
 $(window).resize(function(){
     carousel_setImgPosition();
 });
 
-$(document).ready(function(){
-    // carouselInit();
 
-// carouselInit()
+carouselInit()
 // ----------- design_color ---------------------------------
     $('.design_color a').on('click',function(e){
         e.preventDefault();
@@ -76,6 +78,6 @@ $(document).ready(function(){
 // }
 
 // ----------- img_select ---------------------------------
-});
+
 // end
 });
