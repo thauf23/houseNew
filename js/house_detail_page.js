@@ -15,7 +15,7 @@ $(window).resize(function(){
 });
 
 
-// carouselInit()
+carouselInit()
 // ----------- design_color ---------------------------------
     $('.design_color a').on('click',function(e){
         e.preventDefault();

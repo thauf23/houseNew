@@ -485,7 +485,7 @@
 }
 #container .refrigerator_information ul li small{
     margin: 0.5em 0;
-    border: 1px solid #f00;
+    /* border: 1px solid #f00; */
 }
 #container .refrigerator_information ul li span{}
 
