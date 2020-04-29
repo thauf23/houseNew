@@ -8,15 +8,12 @@ var imgWidth;
 
 $(document).ready(function(){
     carouselInit();
-    carousel_setImgPosition()
 });
 
 $(window).resize(function(){
     carousel_setImgPosition();
 });
 
-
-carouselInit()
 // ----------- design_color ---------------------------------
     $('.design_color a').on('click',function(e){
         e.preventDefault();
