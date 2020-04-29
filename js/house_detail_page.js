@@ -8,6 +8,7 @@ var imgWidth;
 
 $(document).ready(function(){
     carouselInit();
+    carousel_setImgPosition()
 });
 
 $(window).resize(function(){
