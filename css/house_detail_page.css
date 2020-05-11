@@ -196,6 +196,15 @@
 }
 #container .refrigerator_design .design_popup img{}
 
+/* design_poppage */
+#container .refrigerator_design .design_poppage{
+    width: 80%;
+    position: absolute;
+    left: 0; top: 0;
+    /* display: none; */
+}
+
+
 /* design_select */
 #container .refrigerator_design .design_select{}
 #container .refrigerator_design .design_select button{

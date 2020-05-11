@@ -1,0 +1,14 @@
+{
+    "silver":[
+        "../img/detail_page/refrigerator_design/silver_face.jpg",
+        "../img/detail_page/refrigerator_design/silver_side.jpg",
+        "../img/detail_page/refrigerator_design/silver_middle.jpg",
+        "../img/detail_page/refrigerator_design/silver_open.jpg"
+    ],
+    "graphite":[
+       "img/detail_page/refrigerator_design/graphite_face.jpg",
+       "img/detail_page/refrigerator_design/graphite_side.jpg",
+       "img/detail_page/refrigerator_design/graphite_middle.jpg",
+       "img/detail_page/refrigerator_design/graphite_open.jpg"
+    ]
+}
