@@ -9,7 +9,6 @@ var imgWidth;
 
 carouselInit();
 
-
 $(window).resize(function(){
     carousel_setImgPosition();
 });
@@ -44,8 +43,7 @@ $(window).resize(function(){
             }
         }
     }
-//     test()
-// function test(){
+
 // ----------- design_move_prev ---------------------------------
     $('.design_move p:first').on('click',function(){
         // console.log(nowIndex);
@@ -73,9 +71,6 @@ $(window).resize(function(){
         nowIndex++;
         carouselLi.eq(nowIndex - 1).css("left", imgWidth);
     });
-// }
-
-// ----------- img_select ---------------------------------
 
 // end
 });

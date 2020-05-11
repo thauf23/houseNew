@@ -136,7 +136,7 @@
 
 /* design_img */
 #container .refrigerator_design .design_img{
-    width: 100%; height: 100%;
+    width: 100%;
     position: relative;
 }
 #container .refrigerator_design .design_img .refrigerator_disign{
@@ -151,7 +151,7 @@
     display: block;
 }
 #container .refrigerator_design .design_img .refrigerator_disign li{
-    width: 100%; height: 100%;
+    width: 100%;
     position: absolute;
     left: 0; top: 0;
 }
@@ -482,23 +482,28 @@
 }
 #container .refrigerator_information ul li strong{
     margin: 1em 0;
+    font-size: 1.062rem;
 }
 #container .refrigerator_information ul li small{
     margin: 0.5em 0;
-    /* border: 1px solid #f00; */
+    padding-left: 3%;
 }
-#container .refrigerator_information ul li span{}
+#container .refrigerator_information ul li span{
+    padding-left: 3%;
+
+}
 
 #container .refrigerator_information ul li dl{
     
 }
 #container .refrigerator_information ul li dl dt{}
 #container .refrigerator_information ul li dl dd{
-    width: 33%;
+    width: 25%;
     display: flex;
     justify-content: left;
     flex-direction: column;
     float: left;
+    padding-left: 3%;
 }
 
 #container .refrigerator_information .button_bottom{
