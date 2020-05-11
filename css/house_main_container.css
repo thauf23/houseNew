@@ -198,6 +198,7 @@
     -ms-display: flex;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 #container .container_review fieldset .container_grid .review_grid .grid_item_big a{
