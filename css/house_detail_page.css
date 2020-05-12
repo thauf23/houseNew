@@ -198,10 +198,33 @@
 
 /* design_poppage */
 #container .refrigerator_design .design_poppage{
-    width: 80%;
+    width: 100%;
     position: absolute;
     left: 0; top: 0;
-    /* display: none; */
+    z-index: 200;
+    background: #fff;
+    display: none;
+}
+#container .refrigerator_design .design_poppage img{
+    width: 50%;
+    margin: 0 auto;
+}
+#container .refrigerator_design .design_poppage p{
+    width: 60px; height: 50px;
+}
+#container .refrigerator_design .design_poppage p::before{
+    content: '';
+    display: block;
+    width: 100%; height: 2px;
+    background: #000;
+    transform: rotate(45deg) translateY(2px);
+}
+#container .refrigerator_design .design_poppage p::after{
+    content: '';
+    display: block;
+    width: 100%; height: 2px;
+    background: #000;
+    transform: rotate(-45deg);
 }
 
 

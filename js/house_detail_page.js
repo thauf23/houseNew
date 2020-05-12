@@ -24,7 +24,7 @@ $(window).resize(function(){
         $('.design_img ul').removeClass('on_block');
         $('.design_img ul').eq(aIndex).addClass('on_block');
         carouselInit();
-        popupPage();
+        popimgAdd();
     });
 
 // ----------- design_img_position ---------------------------------
@@ -75,25 +75,26 @@ $(window).resize(function(){
         carouselLi.eq(nowIndex - 1).css("left", imgWidth);
     });
 
-// ----------- design_move_next ---------------------------------
-    function popupPage(){
+// ----------- design_pop_page ---------------------------------
+    $('.design_popup img').on('click',function(){
+        $('.design_poppage').css("display", "block");
+    });
+
+// ----------- design_img_add ---------------------------------
+    function popimgAdd(){
+        $('.design_poppage img').remove();
         $.ajax({
             url : 'js/house_detail_page.json',
             type : 'GET', //POST
             dataType : 'json',
-            success :function(data){
-                var clearImg = $('.design_poppage img');
+            success :function(data){                
                 if(aIndex == 0){
-                    $('.design_poppage').remove($('.design_poppage img'));
-                    console.log(clearImg);
                     for(var i in data.silver){
                         imgNode = "<img src="+data.silver[i]+">";
                         $('.design_poppage').append(imgNode);               
                     }
                 }else{
                     for(var i in data.graphite){
-                        $('.design_poppage').remove($('.design_poppage img'));
-                        console.log(clearImg);
                         imgNode = "<img src="+data.graphite[i]+">";
                         $('.design_poppage').append(imgNode);               
                     }
