@@ -424,7 +424,7 @@
     align-items: center;
     position: absolute;
     left: 0; top: 0;
-    display: none;
+    /* display: none; */
 }
 #container .refrigerator_gallery .gallery_pop > p{
     width: 80%; height: 80vh;
