@@ -8,9 +8,6 @@ var liCount;
 var imgWidth;
 var imgNode;
 
-
-carouselInit();
-
 $(window).resize(function(){
     carousel_setImgPosition();
 });
@@ -28,6 +25,7 @@ $(window).resize(function(){
     });
 
 // ----------- design_img_position ---------------------------------
+    carouselInit();
     function carouselInit(){
         carouselLi = $('.on_block li');
         liCount = carouselLi.length;
@@ -49,7 +47,6 @@ $(window).resize(function(){
 
 // ----------- design_move_prev ---------------------------------
     $('.design_move p:first').on('click',function(){
-        // console.log(nowIndex);
         carouselLi.eq(nowIndex).css("left", -imgWidth);
         if(nowIndex <= 0) {
             carouselLi.eq(3).css("left", 0);
@@ -63,7 +60,6 @@ $(window).resize(function(){
 
 // ----------- design_move_next ---------------------------------
     $('.design_move p:last').on('click',function(){
-        // console.log(nowIndex);
         carouselLi.eq(nowIndex).css("left", -imgWidth);
         if(nowIndex == liCount -1) {
             carouselLi.eq(0).css("left", 0);
@@ -106,5 +102,6 @@ $(window).resize(function(){
             }
         });
     }
+
 // end
 });
