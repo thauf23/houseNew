@@ -79,8 +79,12 @@ $(window).resize(function(){
     $('.design_popup img').on('click',function(){
         $('.design_poppage').css("display", "block");
     });
+    $('.design_poppage p').on('click',function(){
+        $('.design_poppage').css("display", "none");
+    });
 
 // ----------- design_img_add ---------------------------------
+    popimgAdd()
     function popimgAdd(){
         $('.design_poppage img').remove();
         $.ajax({
