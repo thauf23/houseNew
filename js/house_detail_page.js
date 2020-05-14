@@ -103,5 +103,14 @@ $(window).resize(function(){
         });
     }
 
+// ----------- gallery_open ---------------------------------
+$('.refrigerator_gallery ul').on('click',function(){
+    $('.gallery_pop').css('display','block');
+    $('.gallery_pop').css('display','flex');
+});
+$('.gallery_x').on('click',function(){
+    $('.gallery_pop').css('display','none');
+});
+
 // end
 });

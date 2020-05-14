@@ -419,12 +419,11 @@
 #container .refrigerator_gallery .gallery_pop{
     width: 100%; height: 100vh;
     background: rgba(0, 0, 0, .8);
-    display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     left: 0; top: 0;
-    /* display: none; */
+    display: none;
 }
 #container .refrigerator_gallery .gallery_pop > p{
     width: 80%; height: 80vh;
@@ -457,6 +456,7 @@
     width: 62px; height: 60px;
     position: absolute;
     top: 6%; right: 3%;
+    cursor: pointer;
 }
 #container .refrigerator_gallery .gallery_pop .gallery_x span{
     width: 100%; height: 2px;
