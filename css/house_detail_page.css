@@ -509,6 +509,27 @@
 #container .refrigerator_size .size_button p.rotate{
     transform: rotate(180deg);
 }
+#container .refrigerator_size .size_button p.button_top{
+    animation: dongdong 1s infinite;
+    transform: rotate(180deg);
+}
+/* #container .refrigerator_information .button_bottom .button_top{
+    transform: rotate(180deg);
+} */
+@keyframes dongdong{
+    0%{opacity: 1;transform: translateY(-4px);}
+    90%{transform: translateY(4px);}
+    100%{opacity: 0;}
+}
+#container .refrigerator_size .size_button p.button_close{
+    animation: dongdongs 1s infinite;
+}
+@keyframes dongdongs{
+    0%{opacity: 1;transform: translateY(4px);}
+    90%{transform: translateY(-4px);}
+    100%{opacity: 0;}
+}
+
 #container .refrigerator_size .size_button p img{}
 
 /* refrigerator_information */
@@ -554,10 +575,9 @@
     padding-bottom: 0;
     padding-top: 4em;
 }
-#container .refrigerator_information .button_bottom p{
-    transform: rotate(180deg);
-}
 
+
+/* footer */
 footer{
     background: #fff;
     margin-top: 5em;

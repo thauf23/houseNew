@@ -124,7 +124,7 @@ $('.gallery_x').on('click',function(){
 // ----------- size_button ---------------------------------
 $('.refrigerator_information').slideUp();
 $(".size_button").on('click',function(){
-    $(".size_button p").toggleClass('rotate');
+    $(".size_button .button_top").toggleClass('rotate');
     $('.refrigerator_information').slideToggle();
 });
 
