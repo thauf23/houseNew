@@ -8,13 +8,14 @@ var liCount;
 var imgWidth;
 var imgNode;
 var uL;
-var imgH;
+// var imgH;
 
 
 // ----------- ul first height ---------------------------------
-$(window).one('scroll',function(){
-    ul = $('desing_img .on_block').height(600);
-});
+// $(window).one('scroll',function(){
+//     uL = $('desing_img .on_block').height(600);
+// });
+// $('.design_color a').bind();
     
 $(window).resize(function(){
     carousel_setImgPosition();
@@ -128,7 +129,6 @@ $(".size_button").on('click',function(){
     console.log($(".size_button p"));
     $('.refrigerator_information').slideToggle(500);
 });
-
 
 // end
 });
