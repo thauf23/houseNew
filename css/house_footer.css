@@ -1,0 +1,31 @@
+/* footer */
+footer{
+    width: 100%; 
+    background: #000;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3.75em 0 1em 0;
+}
+footer ul li{
+    color: #6e6e6e;
+    font-size: 0.75rem;
+}
+footer ul li::after{
+    content: '';
+    display: inline-block;
+    background: #6e6e6e;
+    width: 1px; height: 8px;
+    margin: 0 10px;
+}
+footer ul li:last-of-type:after{
+    display: none;
+}
+footer p{
+    text-align: center;
+    color: #6e6e6e;
+    font-size: 0.75rem;
+    padding-bottom: 6.25em;
+}

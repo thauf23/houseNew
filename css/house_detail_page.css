@@ -497,6 +497,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 2em;
+    cursor: pointer;
 }
 #container .refrigerator_size .size_button span{
     margin-right: 20px;
@@ -504,6 +505,9 @@
 #container .refrigerator_size .size_button p{
     width: 20px;
     margin-top: 3px;
+}
+#container .refrigerator_size .size_button p.rotate{
+    transform: rotate(180deg);
 }
 #container .refrigerator_size .size_button p img{}
 
@@ -552,4 +556,16 @@
 }
 #container .refrigerator_information .button_bottom p{
     transform: rotate(180deg);
+}
+
+footer{
+    background: #fff;
+    margin-top: 5em;
+}
+footer ul li{
+    color: #333;
+}
+
+footer p{
+    color: #333;
 }

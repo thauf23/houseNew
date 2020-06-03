@@ -121,5 +121,13 @@ $('.gallery_x').on('click',function(){
     $('.gallery_pop').css('display','none');
 });
 
+// ----------- size_button ---------------------------------
+$('.refrigerator_information').slideUp();
+$(".size_button").on('click',function(){
+    $(".size_button p").toggleClass('rotate');
+    $('.refrigerator_information').slideToggle();
+});
+
+
 // end
 });
