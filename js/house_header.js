@@ -40,5 +40,14 @@ $('header .header_nav nav').on('click',function(){
     $('.header_menu').toggle(900);
 });
 
+
+// for(var i=0;i<await.length;i++){
+//     var a = document.createElement('img');
+//     a.src = 'img/aaa0001.jpg';
+// }
+
+
+
+
 // end
 });
