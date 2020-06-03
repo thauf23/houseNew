@@ -56,7 +56,7 @@
     text-align: center;
     position: relative;
 }
-#container .container_nav ul li:hover::after{
+#container .container_nav ul li:hover a::after{
     content: '';
     display: inline-block;
     background: rgb(255, 255, 0,.3);
@@ -65,14 +65,15 @@
     right: 16%; top: 15%;
     border-radius: 50%;
 }
-#container .container_nav ul li.on{
+#container .container_nav ul li a.on{
+    height: 100%;
     border: 1px solid #e0e0e0;
     border-bottom: none;
     top: 0px;
     background: #fff;
     font-weight: 900;
 }
-#container .container_nav ul li.on::after{
+#container .container_nav ul li .on::after {
     content: '';
     display: inline-block;
     background: rgb(149, 72, 21,.3);
@@ -85,7 +86,6 @@
     width: 100%; height: 100%;
     display: block;
     padding: 1.875em 0;
-    border: 1px solid #f00;
 }
 
 #container section{
