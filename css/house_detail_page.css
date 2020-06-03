@@ -506,18 +506,12 @@
     width: 20px;
     margin-top: 3px;
 }
-#container .refrigerator_size .size_button p.rotate{
-    transform: rotate(180deg);
-}
+
 #container .refrigerator_size .size_button p.button_top{
     animation: dongdong 1s infinite;
-    transform: rotate(180deg);
 }
-/* #container .refrigerator_information .button_bottom .button_top{
-    transform: rotate(180deg);
-} */
 @keyframes dongdong{
-    0%{opacity: 1;transform: translateY(-4px);}
+    0%{opacity: 1;transform: translateY(-4px)}
     90%{transform: translateY(4px);}
     100%{opacity: 0;}
 }
@@ -525,9 +519,12 @@
     animation: dongdongs 1s infinite;
 }
 @keyframes dongdongs{
-    0%{opacity: 1;transform: translateY(4px);}
-    90%{transform: translateY(-4px);}
-    100%{opacity: 0;}
+    0%{opacity: 1; transform: translateY(4px) rotate(180deg);}
+    90%{transform: translateY(-4px) rotate(180deg);}
+    100%{opacity: 0; transform: rotate(180deg);}
+}
+#container .refrigerator_size .size_button .button_top.rotate{
+    animation: dongdongs 1s infinite;
 }
 
 #container .refrigerator_size .size_button p img{}
