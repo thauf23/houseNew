@@ -42,9 +42,11 @@ $('header .header_nav nav').on('click',function(){
 
 
 // for(var i=0;i<await.length;i++){
-//     var a = document.createElement('img');
-//     a.src = 'img/aaa0001.jpg';
-// }
+    // var subImg = document.createElement('img');
+    // subImg.src = 'img/detail_page/refrigerator_design/silver_face.jpg';
+    
+
+    // }
 
 
 

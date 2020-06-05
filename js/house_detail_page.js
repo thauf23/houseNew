@@ -34,7 +34,8 @@ $(window).resize(function(){
     });
 
 // ----------- design_img_position ---------------------------------
-    carouselInit();
+   setTimeout(carouselInit,50);
+    
     function carouselInit(){
         carouselLi = $('.on_block li');
         liCount = carouselLi.length;
