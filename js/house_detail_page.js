@@ -9,6 +9,7 @@ var imgWidth;
 var imgNode;
 var uL;
 var ulH = $('.design_img .on_block').height(600);
+console.log(ulH);
 
 
 // ----------- ul first height ---------------------------------
@@ -34,7 +35,7 @@ $(window).resize(function(){
     });
 
 // ----------- design_img_position ---------------------------------
-   setTimeout(carouselInit,50);
+   setTimeout(carouselInit,100);
     
     function carouselInit(){
         carouselLi = $('.on_block li');
@@ -46,6 +47,8 @@ $(window).resize(function(){
     function carousel_setImgPosition(){
         imgHeight = $('.design_img .on_block li img').height();
         ulH = $('.design_img .on_block').height(imgHeight);
+console.log(ulH);
+
         imgWidth = carouselLi.width();
         for(var i=0; i<liCount; i++){
             if( i == nowIndex){
