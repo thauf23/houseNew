@@ -8,7 +8,7 @@ var liCount;
 var imgWidth;
 var imgNode;
 var uL;
-// var imgH;
+var ulH = $('.design_img .on_block').height(600);
 
 
 // ----------- ul first height ---------------------------------
@@ -45,7 +45,7 @@ $(window).resize(function(){
     
     function carousel_setImgPosition(){
         imgHeight = $('.design_img .on_block li img').height();
-        $('.design_img .on_block').height(imgHeight);
+        ulH = $('.design_img .on_block').height(imgHeight);
         imgWidth = carouselLi.width();
         for(var i=0; i<liCount; i++){
             if( i == nowIndex){
