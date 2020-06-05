@@ -47,7 +47,7 @@ $(window).resize(function(){
     function carousel_setImgPosition(){
         imgHeight = $('.design_img .on_block li img').height();
         ulH = $('.design_img .on_block').height(imgHeight);
-console.log(ulH);
+        console.log(ulH);
 
         imgWidth = carouselLi.width();
         for(var i=0; i<liCount; i++){
