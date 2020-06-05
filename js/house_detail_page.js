@@ -125,23 +125,30 @@ $(".size_button").on('click',function(){
 
 // ----------- sub_nav ---------------------------------
 var firstSec = $('.refrigerator_design').offset().top;
+var p = $(window).height();
+console.log(p)
 var rollTop;
+
 
 $(window).on('scroll',function(){
     rollTop = $(window).scrollTop();
+    // console.log(rollTop);
+    // console.log(firstSec);
     if( firstSec < rollTop ) {
         $('.container_nav').css({
             width: "78%",
             position: "fixed",
             left: "50%",
-            bottom: 0,
+            top: 0,
             transform: "translateX(-50%)",
+            margin: 0,
             zIndex: 200,
         });
     } else {
         $('.container_nav').css({
             width: "100%",
-            position: "relative"
+            position: "relative",
+            marginTop: "7em"
         });
     }
 });
