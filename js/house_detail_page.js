@@ -37,7 +37,6 @@ $(window).resize(function(){
     function carousel_setImgPosition(){
         imgHeight = $('.design_img .on_block li img').height();
         $('.design_img .on_block').height(imgHeight);
-        console.log(ulH);
 
         imgWidth = carouselLi.width();
         for(var i=0; i<liCount; i++){
@@ -125,7 +124,27 @@ $(".size_button").on('click',function(){
 });
 
 // ----------- sub_nav ---------------------------------
+var firstSec = $('.refrigerator_design').offset().top;
+var rollTop;
 
+$(window).on('scroll',function(){
+    rollTop = $(window).scrollTop();
+    if( firstSec < rollTop ) {
+        $('.container_nav').css({
+            width: "78%",
+            position: "fixed",
+            left: "50%",
+            bottom: 0,
+            transform: "translateX(-50%)",
+            zIndex: 200,
+        });
+    } else {
+        $('.container_nav').css({
+            width: "100%",
+            position: "relative"
+        });
+    }
+});
 
 
 // end
