@@ -25,7 +25,7 @@ $(window).resize(function(){
     });
 
 // ----------- design_img_position ---------------------------------
-   setTimeout(carouselInit,50);
+   setTimeout(carouselInit,100);
     
     function carouselInit(){
         carouselLi = $('.on_block li');
